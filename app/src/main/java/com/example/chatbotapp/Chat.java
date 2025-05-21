@@ -28,7 +28,7 @@ public class Chat extends AppCompatActivity {
         chatDis = findViewById(R.id.chatDisplay);
 
         String username = getIntent().getStringExtra("username");
-        chat.setText("Chatting as: " + username);
+        chat.setText("User: " + username);
 
         sendBtn.setOnClickListener(view -> {
             String message = user.getText().toString().trim();
