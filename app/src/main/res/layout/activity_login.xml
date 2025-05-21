@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33B5E5"
+    tools:context=".Login"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome,"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"/>
+
+    <TextView
+        android:id="@+id/letsChatTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lets Chat!"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_below="@id/welcomeTextView"
+        android:layout_marginTop="0dp"
+        android:layout_centerHorizontal="true" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/letsChatTextView" />
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Username"
+        android:inputType="text"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_below="@id/space"
+        android:layout_marginTop="0dp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Go"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:backgroundTint="#4CAF50"
+        android:layout_below="@id/usernameEditText"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>
